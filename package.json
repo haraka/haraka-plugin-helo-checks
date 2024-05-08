@@ -1,7 +1,7 @@
 {
-  "name": "haraka-plugin-template",
-  "version": "1.0.7",
-  "description": "Haraka plugin that...CHANGE THIS",
+  "name": "haraka-plugin-helo.checks",
+  "version": "1.0.0",
+  "description": "Haraka plugin checks the HELO string.",
   "main": "index.js",
   "files": [
     "CHANGELOG.md",
@@ -19,20 +19,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haraka/haraka-plugin-template.git"
+    "url": "git+https://github.com/haraka/haraka-plugin-helo.checks.git"
   },
   "keywords": [
     "haraka-plugin",
-    "template"
+    "helo.checks"
   ],
-  "author": "Welcome Member <happy-haraka-hacker@example.com>",
+  "author": "Haraka Team <haraka.team@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haraka/haraka-plugin-template/issues"
+    "url": "https://github.com/haraka/haraka-plugin-helo.checks/issues"
   },
-  "homepage": "https://github.com/haraka/haraka-plugin-template#readme",
+  "homepage": "https://github.com/haraka/haraka-plugin-helo.checks#readme",
   "devDependencies": {
     "@haraka/eslint-config": "1.1.3",
     "haraka-test-fixtures": "1.3.5"
+  },
+  "dependencies": {
+    "haraka-net-utils": "^1.7.0",
+    "haraka-tld": "^1.2.1",
+    "haraka-utils": "^1.1.3"
   }
 }
