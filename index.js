@@ -141,7 +141,6 @@ exports.host_mismatch = function (next, connection, helo) {
   const prev_helo = connection.results.get('helo.checks').helo_host
   if (!prev_helo) {
     connection.results.add(this, { skip: 'host_mismatch(1st)' })
-    connection.notes.prev_helo = helo
     return next()
   }
 
