@@ -515,19 +515,6 @@ exports.get_a_records = async function (host) {
     throw e
   }
 
-  // Set-up timer
-  let timed_out = false
-  const timer = setTimeout(
-    () => {
-      timed_out = true
-      const err = new Error(`timeout resolving: ${host}`)
-      err.code = dns.TIMEOUT
-      this.logerror(err)
-      throw err
-    },
-    (this.cfg.main.dns_timeout || 28) * 1000,
-  )
-
   // fully qualify, to ignore any search options in /etc/resolv.conf
   if (!/\.$/.test(host)) host = `${host}.`
 
@@ -550,8 +537,6 @@ exports.get_a_records = async function (host) {
   }
 
   // results is now equals to: {queryA: 1, queryAAAA: 2}
-  if (timed_out) return
-  if (timer) clearTimeout(timer)
   if (!ips.length && err) throw err
   // this.logdebug(this, host + ' => ' + ips);
   // return the DNS results
