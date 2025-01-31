@@ -1,6 +1,6 @@
 {
   "name": "haraka-plugin-helo.checks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Haraka plugin checks the HELO string.",
   "main": "index.js",
   "files": [
