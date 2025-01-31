@@ -334,8 +334,8 @@ describe('helo.checks', () => {
     beforeEach(_set_up)
 
     it('pass, reject=false', (t, done) => {
-      const test_helo = 'yahoo.com'
-      this.connection.remote.host = 'yahoo.com'
+      const test_helo = 'yahoo.co.jp'
+      this.connection.remote.host = 'yahoo.co.jp'
       this.plugin.cfg.check.big_company = true
       this.plugin.cfg.reject.big_company = true
       this.plugin.big_company(
