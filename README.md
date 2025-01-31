@@ -1,8 +1,6 @@
 [![CI Test Status][ci-img]][ci-url]
 [![Code Climate][clim-img]][clim-url]
 
-[![NPM][npm-img]][npm-url]
-
 # haraka-plugin-helo.checks
 
 This plugin performs a number of checks on the HELO string.
@@ -151,5 +149,3 @@ gmail.com=google.com
 [ci-url]: https://github.com/haraka/haraka-plugin-helo.checks/actions/workflows/ci.yml
 [clim-img]: https://codeclimate.com/github/haraka/haraka-plugin-helo.checks/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-plugin-helo.checks
-[npm-img]: https://nodei.co/npm/haraka-plugin-helo.checks.png
-[npm-url]: https://www.npmjs.com/package/haraka-plugin-helo.checks
