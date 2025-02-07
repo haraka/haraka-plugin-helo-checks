@@ -408,7 +408,7 @@ exports.forward_dns = function (next, connection, helo) {
         connection.results.add(this, { err: 'forward_dns, no ips!' })
         return next()
       }
-      connection.results.add(this, { ips })
+      connection.results.add(this, { ips: ips })
 
       if (ips.includes(connection.remote.ip)) {
         connection.results.add(this, { pass: 'forward_dns' })
